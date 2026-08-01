@@ -1,0 +1,112 @@
+Running AutomationTool...
+Using bundled DotNet SDK version: 10.0 win-x64
+Starting AutomationTool...
+Parsing command line: BuildPlugin -Plugin=B:\Projects\DTSDemo\Plugins\DistanceTrackingSystem\DistanceTrackingSystem.uplugin -Package=B:\Projects\DTSDemo\Builds\DistanceTrackingSystem -Rocket -2019
+Initializing script modules...
+Total script module initialization time: 0.17 s.
+Using B:\VisualStudio\Community\MSBuild\Current\Bin\MSBuild.exe
+Executing commands...
+Copying 114 file(s) using max 64 thread(s)
+Reading plugin from B:\Projects\DTSDemo\Builds\DistanceTrackingSystem\HostProject\Plugins\DistanceTrackingSystem\DistanceTrackingSystem.uplugin...
+Building plugin for host platforms: Win64
+Running: B:\UnrealEngine\UE_5.8\Engine\Binaries\ThirdParty\DotNet\10.0\win-x64\dotnet.exe "B:\UnrealEngine\UE_5.8\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealEditor Win64 Development -Project="B:\Projects\DTSDemo\Builds\DistanceTrackingSystem\HostProject\HostProject.uproject" -plugin="B:\Projects\DTSDemo\Builds\DistanceTrackingSystem\HostProject\Plugins\DistanceTrackingSystem\DistanceTrackingSystem.uplugin" -noubtmakefiles -manifest="B:\Projects\DTSDemo\Builds\DistanceTrackingSystem\HostProject\Saved\Manifest-UnrealEditor-Win64-Development.xml" -nohotreload -log="C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealEditor-Win64-Development.txt"
+Log file: C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealEditor-Win64-Development.txt
+HostProject.uproject is has no code, but is being treated as a code-based project for platforms Android, IOS, Linux, Mac, TVOS, Win64 because: GameplayInsights plugin is disabled. Creating temporary .Target.cs files.
+Determining max actions to execute in parallel (8 physical cores, 16 logical cores)
+  Executing up to 8 processes, one per physical core
+UbaServer - Listening on 0.0.0.0:1345
+Creating makefile for UnrealEditor (no existing makefile)
+UHT compiled-in object format Default
+Writing manifest to B:\Projects\DTSDemo\Builds\DistanceTrackingSystem\HostProject\Saved\Manifest-UnrealEditor-Win64-Development.xml
+Building UnrealEditor...
+===== Toolchain Information =====
+Using ISPC compiler (B:\UnrealEngine\UE_5.8\Engine\Source\ThirdParty\Intel\ISPC\bin\Windows\ispc.exe)
+  Intel(r) Implicit SPMD Program Compiler (Intel(r) ISPC), 1.24.0 (build commit  @ 20250404, LLVM 18.1.2)
+Using Visual Studio 14.44.35228 toolchain (B:\VisualStudio\Community\VC\Tools\MSVC\14.44.35207) and Windows 10.0.22621.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[Adaptive Build] Excluded from DistanceTrackingSystem unity file: DistanceTrackingSystem.cpp, DTSAsyncAction.cpp
+=================================
+Using Unreal Build Accelerator local executor to run 8 action(s)
+  CPU 8 physical cores, 16 logical cores
+  Memory 63.91 GB physical, 14.09 GB/67.91 GB committed
+  UBA Storage capacity 40 GB
+[1/8] Compile Resource [x64] Default.rc2
+[2/8] Compile [x64] SharedPCH.UnrealEd.Cpp20.cpp
+[3/8] Compile [x64] DistanceTrackingSystem.cpp
+[4/8] Compile [x64] Module.DistanceTrackingSystem.cpp
+[5/8] Compile [x64] DTSAsyncAction.cpp
+[6/8] Link [x64] UnrealEditor-DistanceTrackingSystem.lib
+[7/8] Link [x64] UnrealEditor-DistanceTrackingSystem.dll
+[8/8] WriteMetadata UnrealEditor.target [NoUba]
+
+Total time in Unreal Build Accelerator local executor: 37.22 seconds
+Output binary: B:\UnrealEngine\UE_5.8\Engine\Binaries\Win64\UnrealEditor.exe
+
+Result: Succeeded
+Total execution time: 67.03 seconds
+Trace written to file C:\Users\dexie\AppData\Local\UnrealBuildTool\Trace.uba with size 12.2kb
+Took 67,39s to run dotnet.exe, ExitCode=0
+Building plugin for target platforms: Win64
+Running: B:\UnrealEngine\UE_5.8\Engine\Binaries\ThirdParty\DotNet\10.0\win-x64\dotnet.exe "B:\UnrealEngine\UE_5.8\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealGame Win64 Development -Project="B:\Projects\DTSDemo\Builds\DistanceTrackingSystem\HostProject\HostProject.uproject" -plugin="B:\Projects\DTSDemo\Builds\DistanceTrackingSystem\HostProject\Plugins\DistanceTrackingSystem\DistanceTrackingSystem.uplugin" -noubtmakefiles -manifest="B:\Projects\DTSDemo\Builds\DistanceTrackingSystem\HostProject\Saved\Manifest-UnrealGame-Win64-Development.xml" -nohotreload -log="C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealGame-Win64-Development.txt"
+Log file: C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealGame-Win64-Development.txt
+Determining max actions to execute in parallel (8 physical cores, 16 logical cores)
+  Executing up to 8 processes, one per physical core
+UbaServer - Listening on 0.0.0.0:1345
+Creating makefile for UnrealGame (no existing makefile)
+UHT compiled-in object format Default
+Writing manifest to B:\Projects\DTSDemo\Builds\DistanceTrackingSystem\HostProject\Saved\Manifest-UnrealGame-Win64-Development.xml
+Building UnrealGame...
+===== Toolchain Information =====
+Using ISPC compiler (B:\UnrealEngine\UE_5.8\Engine\Source\ThirdParty\Intel\ISPC\bin\Windows\ispc.exe)
+  Intel(r) Implicit SPMD Program Compiler (Intel(r) ISPC), 1.24.0 (build commit  @ 20250404, LLVM 18.1.2)
+Using Visual Studio 14.44.35228 toolchain (B:\VisualStudio\Community\VC\Tools\MSVC\14.44.35207) and Windows 10.0.22621.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[Adaptive Build] Excluded from DistanceTrackingSystem unity file: DistanceTrackingSystem.cpp, DTSAsyncAction.cpp
+=================================
+Using Unreal Build Accelerator local executor to run 3 action(s)
+  CPU 8 physical cores, 16 logical cores
+  Memory 63.91 GB physical, 13.36 GB/67.91 GB committed
+  UBA Storage capacity 40 GB
+[1/3] Compile [x64] DistanceTrackingSystem.cpp
+[2/3] Compile [x64] Module.DistanceTrackingSystem.cpp
+[3/3] Compile [x64] DTSAsyncAction.cpp
+
+Total time in Unreal Build Accelerator local executor: 8.41 seconds
+Output binary: B:\UnrealEngine\UE_5.8\Engine\Binaries\Win64\UnrealGame.exe
+
+Result: Succeeded
+Total execution time: 11.52 seconds
+Trace written to file C:\Users\dexie\AppData\Local\UnrealBuildTool\Trace.uba with size 5.8kb
+Took 11,72s to run dotnet.exe, ExitCode=0
+Running: B:\UnrealEngine\UE_5.8\Engine\Binaries\ThirdParty\DotNet\10.0\win-x64\dotnet.exe "B:\UnrealEngine\UE_5.8\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealGame Win64 Shipping -Project="B:\Projects\DTSDemo\Builds\DistanceTrackingSystem\HostProject\HostProject.uproject" -plugin="B:\Projects\DTSDemo\Builds\DistanceTrackingSystem\HostProject\Plugins\DistanceTrackingSystem\DistanceTrackingSystem.uplugin" -noubtmakefiles -manifest="B:\Projects\DTSDemo\Builds\DistanceTrackingSystem\HostProject\Saved\Manifest-UnrealGame-Win64-Shipping.xml" -nohotreload -log="C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealGame-Win64-Shipping.txt"
+Log file: C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealGame-Win64-Shipping.txt
+Determining max actions to execute in parallel (8 physical cores, 16 logical cores)
+  Executing up to 8 processes, one per physical core
+UbaServer - Listening on 0.0.0.0:1345
+Creating makefile for UnrealGame (no existing makefile)
+Writing manifest to B:\Projects\DTSDemo\Builds\DistanceTrackingSystem\HostProject\Saved\Manifest-UnrealGame-Win64-Shipping.xml
+Building UnrealGame...
+===== Toolchain Information =====
+Using ISPC compiler (B:\UnrealEngine\UE_5.8\Engine\Source\ThirdParty\Intel\ISPC\bin\Windows\ispc.exe)
+  Intel(r) Implicit SPMD Program Compiler (Intel(r) ISPC), 1.24.0 (build commit  @ 20250404, LLVM 18.1.2)
+Using Visual Studio 14.44.35228 toolchain (B:\VisualStudio\Community\VC\Tools\MSVC\14.44.35207) and Windows 10.0.22621.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[Adaptive Build] Excluded from DistanceTrackingSystem unity file: DistanceTrackingSystem.cpp, DTSAsyncAction.cpp
+=================================
+Using Unreal Build Accelerator local executor to run 3 action(s)
+  CPU 8 physical cores, 16 logical cores
+  Memory 63.91 GB physical, 12.96 GB/67.91 GB committed
+  UBA Storage capacity 40 GB
+[1/3] Compile [x64] DistanceTrackingSystem.cpp
+[2/3] Compile [x64] Module.DistanceTrackingSystem.cpp
+[3/3] Compile [x64] DTSAsyncAction.cpp
+
+Total time in Unreal Build Accelerator local executor: 7.66 seconds
+Output binary: B:\UnrealEngine\UE_5.8\Engine\Binaries\Win64\UnrealGame-Win64-Shipping.exe
+
+Result: Succeeded
+Total execution time: 9.22 seconds
+Trace written to file C:\Users\dexie\AppData\Local\UnrealBuildTool\Trace.uba with size 5.6kb
+Took 9,38s to run dotnet.exe, ExitCode=0
+Reading filter rules from B:\Projects\DTSDemo\Builds\DistanceTrackingSystem\HostProject\Plugins\DistanceTrackingSystem\Config\FilterPlugin.ini
+Loading FilterPluginWin64.ini
+BUILD SUCCESSFUL
+AutomationTool executed for 0h 1m 29s
+AutomationTool exiting with ExitCode=0 (Success)
